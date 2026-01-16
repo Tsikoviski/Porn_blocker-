@@ -1,0 +1,75 @@
+#pureguard-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #0f172a;
+    color: #f8fafc;
+    z-index: 2147483647; /* Max z-index */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.pureguard-container {
+    text-align: center;
+    max-width: 500px;
+    padding: 2rem;
+    background: #1e293b;
+    border-radius: 12px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.pureguard-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.pureguard-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #38bdf8;
+}
+
+.pureguard-container p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #cbd5e1;
+}
+
+#pureguard-back-btn {
+    background: #38bdf8;
+    color: #0f172a;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+
+#pureguard-back-btn:hover {
+    background: #0ea5e9;
+}
+
+.pureguard-blocked-body {
+    overflow: hidden !important;
+}
+
+/* Blur Mode */
+.pureguard-blur-media img,
+.pureguard-blur-media video,
+.pureguard-blur-media iframe {
+    filter: blur(20px) !important;
+    opacity: 0.8;
+    transition: filter 0.3s;
+}
+
+.pureguard-blur-media img:hover,
+.pureguard-blur-media video:hover {
+    /* Optional: allow peek on hover if strictness allows, or keep blurred */
+    /* filter: blur(0px) !important; */ 
+}

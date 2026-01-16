@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PureGuard Options</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #2563eb;
+        }
+
+        .success {
+            color: green;
+            display: none;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>PureGuard Settings</h1>
+
+    <div class="section">
+        <label for="whitelist">Whitelisted Domains (One per line)</label>
+        <p>These sites will never be blocked.</p>
+        <textarea id="whitelist" placeholder="example.com"></textarea>
+    </div>
+
+    <button id="save">Save Settings</button>
+    <span id="msg" class="success">Saved!</span>
+
+    <script src="options.js"></script>
+</body>
+
+</html>

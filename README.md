@@ -15,7 +15,7 @@ A privacy-first, offline-capable adult content blocker for Chrome, Firefox, Edge
 ## Installation
 
 ### Chrome / Brave / Edge
-1. Download the extension zip from our [landing page](https://your-vercel-url.vercel.app)
+1. Download the extension zip from our [landing page](https://github.com/Tsikoviski/Porn_blocker-)
 2. Extract the zip file
 3. Go to `chrome://extensions`
 4. Enable **Developer Mode** (top right)

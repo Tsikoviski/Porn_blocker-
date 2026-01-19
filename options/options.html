@@ -58,6 +58,15 @@
 </head>
 
 <body>
+    <div id="lock-overlay"
+        style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: #fff; z-index: 100; flex-direction: column; align-items: center; justify-content: center;">
+        <h2>Settings Locked</h2>
+        <p>Enter PIN to access settings</p>
+        <input type="password" id="pin-input"
+            style="padding: 10px; font-size: 1.2rem; margin: 10px 0; border-radius: 6px; border: 1px solid #ccc;">
+        <p id="pin-error" style="color: red; display: none;">Incorrect PIN</p>
+        <button id="unlock-btn">Unlock</button>
+    </div>
     <h1>PureGuard Settings</h1>
 
     <div class="section">

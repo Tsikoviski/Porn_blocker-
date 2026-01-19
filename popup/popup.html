@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PureGuard</title>
   <link rel="stylesheet" href="popup.css">
 </head>
+
 <body>
   <div class="container">
     <header>
@@ -13,7 +15,10 @@
         <img src="../icons/icon48.png" alt="PureGuard">
         <h1>PureGuard</h1>
       </div>
-      <button id="options-btn">⚙️</button>
+      <div class="header-actions">
+        <button id="lock-btn" class="icon-btn" title="Lock Settings" style="display: none;">🔒</button>
+        <button id="options-btn" class="icon-btn" title="Settings">⚙️</button>
+      </div>
     </header>
 
     <div class="status-card">
@@ -26,7 +31,8 @@
       </div>
     </div>
 
-    <div class="controls">
+    <!-- Protected Controls -->
+    <div id="controls-area" class="controls">
       <label for="strictness">Strictness Level</label>
       <select id="strictness">
         <option value="low">Low</option>
@@ -35,10 +41,25 @@
       </select>
     </div>
 
+    <!-- PIN Modal Overlay -->
+    <div id="pin-modal" class="modal" style="display: none;">
+      <div class="modal-content">
+        <h3 id="modal-title">Enter PIN</h3>
+        <p id="modal-desc">Unlock settings</p>
+        <input type="password" id="pin-input" maxlength="6" placeholder="PIN" />
+        <p id="pin-error" class="error-text" style="display: none;">Incorrect PIN</p>
+        <div class="modal-actions">
+          <button id="pin-cancel" class="btn-secondary">Cancel</button>
+          <button id="pin-confirm" class="btn-primary">Unlock</button>
+        </div>
+      </div>
+    </div>
+
     <footer>
       <p>Version 1.0.0</p>
     </footer>
   </div>
   <script src="popup.js" type="module"></script>
 </body>
+
 </html>

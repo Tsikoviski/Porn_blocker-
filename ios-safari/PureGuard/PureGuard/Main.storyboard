@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PureGuard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shield.checkmark.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="shield-icon">
+                                <rect key="frame" x="146.66666666666666" y="200" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="shield-width"/>
+                                    <constraint firstAttribute="height" constant="100" id="shield-height"/>
+                                </constraints>
+                                <color key="tintColor" red="0.23137254901960785" green="0.50980392156862742" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PureGuard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="title-label">
+                                <rect key="frame" x="97" y="320" width="199" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1" weight="bold"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy-First Content Blocker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="subtitle-label">
+                                <rect key="frame" x="77" y="369" width="239" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="0.58431372549019611" green="0.63921568627450975" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extension status will appear here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="status-label">
+                                <rect key="frame" x="20" y="450" width="353" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubheadline"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enable-button">
+                                <rect key="frame" x="47" y="520" width="300" height="50"/>
+                                <color key="backgroundColor" red="0.23137254901960785" green="0.50980392156862742" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="button-height"/>
+                                    <constraint firstAttribute="width" constant="300" id="button-width"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="Open Safari Settings">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="openSafariSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="button-action"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.058823529411764705" green="0.090196078431372548" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="shield-icon" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="shield-centerX"/>
+                            <constraint firstItem="shield-icon" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="140" id="shield-top"/>
+                            <constraint firstItem="title-label" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="title-centerX"/>
+                            <constraint firstItem="title-label" firstAttribute="top" secondItem="shield-icon" secondAttribute="bottom" constant="20" id="title-top"/>
+                            <constraint firstItem="subtitle-label" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="subtitle-centerX"/>
+                            <constraint firstItem="subtitle-label" firstAttribute="top" secondItem="title-label" secondAttribute="bottom" constant="8" id="subtitle-top"/>
+                            <constraint firstItem="status-label" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="status-centerX"/>
+                            <constraint firstItem="status-label" firstAttribute="top" secondItem="subtitle-label" secondAttribute="bottom" constant="60" id="status-top"/>
+                            <constraint firstItem="status-label" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="status-leading"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="status-label" secondAttribute="trailing" constant="20" id="status-trailing"/>
+                            <constraint firstItem="enable-button" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="button-centerX"/>
+                            <constraint firstItem="enable-button" firstAttribute="top" secondItem="status-label" secondAttribute="bottom" constant="50" id="button-top"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="enableButton" destination="enable-button" id="button-outlet"/>
+                        <outlet property="statusLabel" destination="status-label" id="status-outlet"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-10"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="shield.checkmark.fill" catalog="system" width="128" height="117"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

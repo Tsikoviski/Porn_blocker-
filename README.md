@@ -1,6 +1,6 @@
 # PureGuard - Offline Porn Blocker Extension
 
-A privacy-first, offline-capable adult content blocker for Chrome, Firefox, Edge, Brave, and Safari.
+A privacy-first, offline-capable adult content blocker for Chrome, Firefox, Edge, Brave, Safari, and **mobile browsers**.
 
 ![Shield](icons/icon128.png)
 
@@ -10,7 +10,8 @@ A privacy-first, offline-capable adult content blocker for Chrome, Firefox, Edge
 - 🔒 **100% Offline**: No data leaves your device, ever
 - ⚡ **High Performance**: Minimal CPU usage with smart scanning
 - 🎚️ **Adjustable Strictness**: Low, Standard, and Strict modes
-- 🌐 **Cross-Browser**: Works on all major browsers
+- 🌐 **Cross-Browser**: Works on desktop and mobile browsers
+- 📱 **Mobile Support**: iOS Safari, Firefox for Android, Kiwi Browser
 
 ## Installation
 
@@ -29,6 +30,9 @@ A privacy-first, offline-capable adult content blocker for Chrome, Firefox, Edge
 
 ### Safari
 See [SAFARI_CONVERSION.md](SAFARI_CONVERSION.md) for Xcode build instructions.
+
+### 📱 Mobile Browsers
+See [MOBILE_INSTALL.md](MOBILE_INSTALL.md) for iOS Safari, Firefox for Android, and Kiwi Browser installation.
 
 ## How It Works
 

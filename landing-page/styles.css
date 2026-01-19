@@ -401,6 +401,72 @@ section {
     margin-bottom: 2rem;
 }
 
+/* Mobile Section */
+.mobile-section {
+    padding: 6rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mobile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.mobile-card {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.mobile-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(59, 130, 246, 0.3);
+}
+
+.mobile-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.mobile-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.mobile-card p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.mobile-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.mobile-steps .step {
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--primary-light);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.browser-icon.mobile {
+    background: rgba(59, 130, 246, 0.15);
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
 .download-note {
     margin-top: 1rem;
     color: var(--text-muted);

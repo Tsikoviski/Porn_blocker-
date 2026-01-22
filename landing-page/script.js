@@ -43,3 +43,25 @@ document.querySelectorAll('.feature-card, .score-range').forEach(el => {
     el.style.transition = 'opacity 0.5s, transform 0.5s';
     observer.observe(el);
 });
+
+// Mobile Menu Toggle
+const hamburger = document.querySelector('.hamburger-menu');
+const navLinks = document.querySelector('.nav-links');
+
+if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+
+        // Update aria-label or icon if desired, simpler for now just toggle
+        const isExpanded = navLinks.classList.contains('active');
+        hamburger.setAttribute('aria-expanded', isExpanded);
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
+        });
+    });
+}

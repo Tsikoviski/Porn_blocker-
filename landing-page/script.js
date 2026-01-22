@@ -12,15 +12,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Navbar background on scroll
-const navbar = document.querySelector('.navbar');
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(15, 23, 42, 0.95)';
-    } else {
-        navbar.style.background = 'rgba(15, 23, 42, 0.8)';
-    }
-});
+// Navbar background on scroll removed to keep it consistent via CSS
 
 // Animate elements on scroll
 const observerOptions = {

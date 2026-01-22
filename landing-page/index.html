@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div class="gradient-bg"></div>
+    <div class="dark-bg"></div>
 
     <nav class="navbar">
         <div class="nav-container">
@@ -33,8 +33,14 @@
     </nav>
 
     <header class="hero">
-        <div class="hero-content">
-            <div class="badge">🔒 100% Offline • No Data Collection</div>
+        <div class="hero-content centered-hero">
+            <div class="badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                100% Offline • No Data Collection
+            </div>
             <h1>Take Control of<br><span class="gradient-text">Your Browsing</span></h1>
             <p class="hero-subtitle">
                 A privacy-first content blocker that works entirely offline.
@@ -50,28 +56,43 @@
                     Download Extension
                 </a>
                 <a href="https://github.com/Tsikoviski/Porn_blocker-" class="btn btn-secondary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg>
                     View on GitHub
                 </a>
             </div>
-            <div class="browser-icons">
-                <span>Works with:</span>
-                <div class="browsers">
-                    <div class="browser-icon" title="Google Chrome">🌐</div>
-                    <div class="browser-icon" title="Firefox">🦊</div>
-                    <div class="browser-icon" title="Microsoft Edge">🔷</div>
-                    <div class="browser-icon" title="Brave">🦁</div>
-                    <div class="browser-icon" title="Safari">🧭</div>
-                    <div class="browser-icon mobile" title="iOS Safari">📱</div>
-                    <div class="browser-icon mobile" title="Firefox Android">🤖</div>
-                </div>
+
+            <!-- Browser Icons (SVGs) -->
+            <div class="browser-icons-row">
+                <svg class="browser-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" title="Chrome">
+                    <circle cx="12" cy="12" r="10" />
+                    <circle cx="12" cy="12" r="4" />
+                    <line x1="21.17" y1="8" x2="12" y2="8" />
+                    <line x1="3.95" y1="6.06" x2="8.54" y2="14" />
+                    <line x1="10.88" y1="21.94" x2="15.46" y2="14" />
+                </svg>
+                <svg class="browser-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" title="Firefox">
+                    <path
+                        d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.41 0 8-3.59 8-8s-3.59-8-8-8-8 3.59-8 8 3.59 8 8 8z" />
+                </svg>
+                <svg class="browser-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" title="Edge">
+                    <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                </svg>
+                <svg class="browser-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" title="Safari">
+                    <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
             </div>
         </div>
-        <div class="hero-visual">
-            <div class="shield-container">
-                <div class="shield-glow"></div>
-                <img src="/icons/icon128.png" alt="PureGuard Shield" class="shield-img">
-            </div>
-        </div>
+        <!-- Removed large Hero Visual/Logo -->
     </header>
 
     <section id="features" class="features">
@@ -81,35 +102,63 @@
         </div>
         <div class="features-grid">
             <div class="feature-card">
-                <div class="feature-icon">🌐</div>
+                <div class="feature-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10" />
+                        <line x1="2" y1="12" x2="22" y2="12" />
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                    </svg>
+                </div>
                 <h3>Network Blocking</h3>
                 <p>Blocks known adult domains before the page even starts loading using browser-level APIs.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">🔍</div>
+                <div class="feature-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8" />
+                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    </svg>
+                </div>
                 <h3>Content Analysis</h3>
                 <p>Smart keyword scoring system analyzes page content in real-time with minimal performance impact.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">⚡</div>
+                <div class="feature-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                    </svg>
+                </div>
                 <h3>Instant Response</h3>
                 <p>Pauses media, blurs images, and displays blocking overlays the moment inappropriate content is
                     detected.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">🔒</div>
+                <div class="feature-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                    </svg>
+                </div>
                 <h3>100% Private</h3>
                 <p>Everything runs locally on your device. No data ever leaves your browser.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">🎚️</div>
+                <div class="feature-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="4" y1="21" x2="4" y2="14" />
+                        <line x1="4" y1="10" x2="4" y2="3" />
+                        <line x1="12" y1="21" x2="12" y2="12" />
+                        <line x1="12" y1="8" x2="12" y2="3" />
+                        <line x1="20" y1="21" x2="20" y2="16" />
+                        <line x1="20" y1="12" x2="20" y2="3" />
+                        <line x1="1" y1="14" x2="7" y2="14" />
+                        <line x1="9" y1="8" x2="15" y2="8" />
+                        <line x1="17" y1="16" x2="23" y2="16" />
+                    </svg>
+                </div>
                 <h3>Adjustable Strictness</h3>
                 <p>Choose between Low, Standard, and Strict modes to match your preferences.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">📝</div>
-                <h3>Custom Whitelist</h3>
-                <p>Add trusted sites to your whitelist so they're never blocked.</p>
             </div>
         </div>
     </section>
@@ -122,17 +171,17 @@
         <div class="scoring-visual">
             <div class="score-range safe">
                 <div class="score-label">0 - 14</div>
-                <div class="score-status">✅ Safe</div>
+                <div class="score-status">Safe</div>
                 <div class="score-desc">Normal browsing</div>
             </div>
             <div class="score-range suspicious">
                 <div class="score-label">15 - 39</div>
-                <div class="score-status">⚠️ Suspicious</div>
+                <div class="score-status">Suspicious</div>
                 <div class="score-desc">Media blurred</div>
             </div>
             <div class="score-range blocked">
                 <div class="score-label">40+</div>
-                <div class="score-status">🚫 Blocked</div>
+                <div class="score-status">Blocked</div>
                 <div class="score-desc">Full overlay</div>
             </div>
         </div>
@@ -140,41 +189,72 @@
 
     <section id="mobile" class="mobile-section">
         <div class="section-header">
-            <h2>📱 Mobile Support</h2>
-            <p>PureGuard works on mobile browsers too</p>
+            <h2>Mobile Support</h2>
+            <p>PureGuard works on your phone too</p>
         </div>
-        <div class="mobile-grid">
-            <div class="mobile-card">
-                <div class="mobile-icon">🍎</div>
-                <h3>iOS Safari</h3>
-                <p>Available as a Safari Web Extension for iPhone and iPad running iOS 15+.</p>
-                <div class="mobile-steps">
-                    <span class="step">1. Build from Xcode</span>
-                    <span class="step">2. Enable in Settings → Safari → Extensions</span>
+
+        <div class="mobile-row-container">
+            <!-- iOS Safari -->
+            <div class="mobile-row">
+                <div class="mobile-info">
+                    <div class="mobile-header">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 20h9" />
+                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+                        </svg>
+                        <h3>iOS Safari</h3>
+                    </div>
+                    <p>Requires iOS 15+. Build via Xcode to install locally.</p>
                 </div>
-                <a href="https://github.com/Tsikoviski/Porn_blocker-/tree/main/ios-safari"
-                    class="btn btn-secondary">View iOS Guide</a>
+                <div class="mobile-action">
+                    <a href="https://github.com/Tsikoviski/Porn_blocker-/tree/main/ios-safari"
+                        class="btn btn-sm btn-secondary">
+                        Read iOS Guide &rarr;
+                    </a>
+                </div>
             </div>
-            <div class="mobile-card">
-                <div class="mobile-icon">🤖</div>
-                <h3>Firefox for Android</h3>
-                <p>Install directly from Firefox Add-ons on Android devices.</p>
-                <div class="mobile-steps">
-                    <span class="step">1. Download pureguard-firefox.xpi</span>
-                    <span class="step">2. Install in Firefox Add-ons</span>
+
+            <!-- Firefox Android -->
+            <div class="mobile-row">
+                <div class="mobile-info">
+                    <div class="mobile-header">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <path
+                                d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.41 0 8-3.59 8-8s-3.59-8-8-8-8 3.59-8 8 3.59 8 8 8z" />
+                        </svg>
+                        <h3>Firefox Android</h3>
+                    </div>
+                    <p>Install the .xpi extension file directly in Firefox.</p>
                 </div>
-                <a href="https://github.com/Tsikoviski/Porn_blocker-/blob/main/MOBILE_INSTALL.md"
-                    class="btn btn-secondary">View Android Guide</a>
+                <div class="mobile-action">
+                    <a href="https://github.com/Tsikoviski/Porn_blocker-/blob/main/MOBILE_INSTALL.md"
+                        class="btn btn-sm btn-secondary">
+                        Read Android Guide &rarr;
+                    </a>
+                </div>
             </div>
-            <div class="mobile-card">
-                <div class="mobile-icon">🥝</div>
-                <h3>Kiwi Browser</h3>
-                <p>Use the Chrome extension directly in Kiwi Browser on Android.</p>
-                <div class="mobile-steps">
-                    <span class="step">1. Download extension zip</span>
-                    <span class="step">2. Load unpacked in Kiwi</span>
+
+            <!-- Kiwi Browser -->
+            <div class="mobile-row">
+                <div class="mobile-info">
+                    <div class="mobile-header">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                        </svg>
+                        <h3>Kiwi Browser</h3>
+                    </div>
+                    <p>Supports full Chrome extensions on Android.</p>
                 </div>
-                <a href="/pureguard-extension.zip" download class="btn btn-secondary">Download Extension</a>
+                <div class="mobile-action">
+                    <a href="/pureguard-extension.zip" download class="btn btn-sm btn-secondary">
+                        Download ZIP
+                    </a>
+                </div>
             </div>
         </div>
     </section>
